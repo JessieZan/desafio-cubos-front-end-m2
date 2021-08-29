@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CubosFlix</title>
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/spacing.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header flex-row justify-between">
+      <img src="./assets/logo.svg" alt="Logo">
+      <h1 class="header__title">Cubos Flix</h1>
+      <img class="btn-theme" src="./assets/light-mode.svg" alt="Botão de tema">
+    </header>
+    <div class="container flex-column align-center">
+      <input class="input mt-4" type="text" placeholder="Pesquisar...">
+      <div class="movies-container flex-row justify-center align-center mt-4">
+        <img class="btn-prev mr-3" src="./assets/seta-esquerda-preta.svg" alt="Seta esquerda">
+        <div class="movies flex-row justify-between">
+        
+        </div>
+        <img class="btn-next ml-3" src="./assets/seta-direita-preta.svg" alt="Seta direita">
+      </div>
+      <h2 class="subtitle">Highlight do dia</h2>
+      <div class="highlight flex-row justify-center align-center gap-3 mb-4">
+        <a class="highlight__video-link" href="#" target="_blank">
+          <div class="highlight__video flex-column align-center justify-center">
+            <img src="./assets/play.svg" alt="Play">
+          </div>
+        </a>
+        <div class="highlight__info p-3">
+          <div class="highlight__title-rating flex-row justify-between align-center mb-1">
+            <h3 class="highlight__title"></h3>
+            <span class="highlight__rating"></span>
+          </div>
+          <div class="highlight__genre-launch flex-row mb-3">
+            <span class="highlight__genres"></span>
+            <span class="highlight__launch"></span>
+          </div>
+          <p class="highlight__description">
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal_div hidden">
+      <div class="modal flex-column align-center mb-4">
+      <img src="./assets/close.svg" alt="Close" class="modal__close">
+      <h3 class="modal__title mt-10"></h3>
+      <img class="modal__img">
+      <p class="modal__description mb-4">
+      </p>
+      <div class="modal__genre-average flex-row justify-between gap-15">
+        
+        
+      </div>
+    </div>
+    </div>
+    
+  </body>
+
+</html>
